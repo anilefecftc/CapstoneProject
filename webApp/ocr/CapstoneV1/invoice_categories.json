@@ -1,0 +1,45 @@
+{
+  "categories": {
+    "utility": {
+      "name": "Fatura (Utility)",
+      "keywords": ["elektrik", "su", "doğalgaz", "telefon", "internet", "gsm"],
+      "rules": {
+        "required_fields": ["Fatura No", "Fatura Tarihi"],
+        "amount_range": {"min": 0, "max": 10000}
+      }
+    },
+    "purchase": {
+      "name": "Alım Faturası (Purchase)",
+      "keywords": ["alım", "satın alma", "tedarik", "mal alımı", "ürün", "malzeme", "stok"],
+      "rules": {
+        "required_fields": ["Fatura No", "Fatura Tarihi", "Mal Hizmet Toplam Tutarı"],
+        "amount_range": {"min": 0, "max": null}
+      }
+    },
+    "service": {
+      "name": "Hizmet Faturası (Service)",
+      "keywords": ["hizmet", "servis", "bakım", "onarım", "danışmanlık", "eğitim"],
+      "rules": {
+        "required_fields": ["Fatura No", "Fatura Tarihi"],
+        "amount_range": {"min": 0, "max": null}
+      }
+    },
+    "food": {
+      "name": "Yemek Faturası (Food)",
+      "keywords": ["yemek", "gıda", "restoran", "cafe", "kafeterya", "catering", "mutfak"],
+      "rules": {
+        "required_fields": ["Fatura No", "Fatura Tarihi", "Mal Hizmet Toplam Tutarı"],
+        "amount_range": {"min": 0, "max": 5000}
+      }
+    },
+    "transportation": {
+      "name": "Ulaşım Faturası (Transportation)",
+      "keywords": ["ulaşım", "taksi", "otobüs", "metro", "tren", "havayolu", "bilet"],
+      "rules": {
+        "required_fields": ["Fatura No", "Fatura Tarihi"],
+        "amount_range": {"min": 0, "max": 2000}
+      }
+    }
+  },
+  "default_category": "other"
+} 

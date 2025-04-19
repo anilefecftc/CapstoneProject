@@ -1,0 +1,64 @@
+{
+  "categories": {
+    "utility": {
+      "name": "Fatura (Utility)",
+      "keywords": [
+        "elektrik",
+        "su",
+        "doğalgaz",
+        "telefon",
+        "internet"
+      ],
+      "rules": {
+        "required_fields": [
+          "Fatura No",
+          "Fatura Tarihi"
+        ],
+        "amount_range": {
+          "min": 0,
+          "max": 10000
+        }
+      }
+    },
+    "purchase": {
+      "name": "Alım Faturası (Purchase)",
+      "keywords": [
+        "alım",
+        "satın alma",
+        "tedarik",
+        "mal alımı"
+      ],
+      "rules": {
+        "required_fields": [
+          "Fatura No",
+          "Fatura Tarihi",
+          "Mal Hizmet Toplam Tutarı"
+        ],
+        "amount_range": {
+          "min": 0,
+          "max": null
+        }
+      }
+    },
+    "service": {
+      "name": "Hizmet Faturası (Service)",
+      "keywords": [
+        "hizmet",
+        "servis",
+        "bakım",
+        "onarım"
+      ],
+      "rules": {
+        "required_fields": [
+          "Fatura No",
+          "Fatura Tarihi"
+        ],
+        "amount_range": {
+          "min": 0,
+          "max": null
+        }
+      }
+    }
+  },
+  "default_category": "other"
+}
